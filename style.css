@@ -386,6 +386,9 @@ body {
   .sizeLien12 {
     margin-left: 20%;
   }
+  .header {
+    word-break: break-word;
+  }
   .blocHebergements {
     height: auto;
   }
