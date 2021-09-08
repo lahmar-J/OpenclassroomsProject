@@ -26,8 +26,8 @@ body {
 .bordureNone {
   border: none;
 }
-/* -----Texte-------------*/
-.textGras {
+/* -------------------------Texte------------------------*/
+.texteGras {
   font-weight: bold;
 }
 .colorBleu {
@@ -39,7 +39,7 @@ body {
 .colorGris {
   color: #f2f2f2;
 }
-/*----- Background------------------------------*/
+/*----------------------------- Background-----------------*/
 .backBleu {
   background-color: #0065fc;
 }
@@ -49,7 +49,7 @@ body {
 .backGris {
   background-color: #f2f2f2;
 }
-/*---------------Nav--------------------------------*/
+/*----------------------Nav--------------------------------*/
 .sizeNav {
   height: 100px;
 }
@@ -73,7 +73,7 @@ body {
 .margLogo {
   margin-bottom: 10px;
 }
-/*------Header------------------------------------ */
+/*-----------------------------Header------------------- */
 .bordureSearch {
   width: 400px;
   border-radius: 10px;
@@ -100,7 +100,7 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 0px 10px 10px 0px;
-} /*-----Filtres-------------------------------------*/
+} /*-------------------------Filtres---------------------*/
 .filtre {
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ body {
   border: 2px solid #f2f2f2;
   height: 50px;
   border-radius: 30px;
-  gap: 20px;
+  margin-right: 20px;
 }
 
 .filtreTexteIcons:hover > .filtreTexte {
@@ -140,7 +140,7 @@ body {
   color: #0065fc;
   background-color: #deebff;
 }
-/*------Info incone -----------*/
+/*---------------------Info incone -----------*/
 .info {
   display: flex;
   align-items: center;
@@ -184,6 +184,7 @@ body {
 .imgHebergements3 {
   background-image: url("./src/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   height: 120px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -199,6 +200,7 @@ body {
 .imgHebergements5 {
   background-image: url("./src/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   height: 120px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -218,20 +220,17 @@ body {
 /*-*/
 .flexColumnCentre {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .flexColumnAround {
   display: flex;
-
   flex-direction: column;
   justify-content: space-around;
 }
 .flexColumnBetween {
   display: flex;
-
   flex-direction: column;
   justify-content: space-around;
 }
@@ -255,3 +254,175 @@ body {
 .fas fa-star {
   color: blue;
 }
+/*--------------------Populaire-----------*/
+.blocPopulaires {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.blocPopulaires12 {
+  margin-bottom: 22px;
+}
+
+.cubePopulaires {
+  background-color: white;
+  height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+}
+.cubeDetailsPopulaires {
+  width: 60%;
+  padding-left: 5%;
+}
+.imgPopulaires1 {
+  background-image: url("./src/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 160px;
+
+  border-radius: 15px 0 0 15px;
+}
+.imgPopulaires2 {
+  background-image: url("./src/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+
+  width: 35%;
+  height: 160px;
+
+  border-radius: 15px 0 0 15px;
+}
+.imgPopulaires3 {
+  background-image: url("./src/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0 0 15px;
+}
+/*------------------------------Activités------------------------*/
+.Activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blocActivites {
+  width: 100%;
+  height: 600px;
+}
+.imgActivites1 {
+  /*<div class=" blocActivites flexBetween2">*/
+  background-image: url("./src/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites2 {
+  background-image: url("./src/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites3 {
+  background-image: url("./src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg ");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites4 {
+  background-image: url("./src/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgActivites5 {
+  background-image: url("./src/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 530px;
+
+  border-radius: 15px 15px 0 0;
+}
+.flexBetween2 {
+  display: flex;
+  align-items: center;
+}
+/*------------------------Reglage bloc --------------------*/
+.cubeActivites {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+/*-------------------Fin Reglage bloc--------------*/
+.hauteurTitre {
+  height: 70px;
+}
+.titreActivites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+}
+/*--------------------------------------------------*/
+/*------------------Media screen telephone-----------*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 770px) {
+  .sizeLiens {
+    width: 90%;
+  }
+  .sizeLien12 {
+    margin-left: 20%;
+  }
+  .blocHebergements {
+    height: auto;
+  }
+  .bloc1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .bloc2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .cubeHebergements {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .cubeDetailsPopulaires {
+    min-height: auto;
+  }
+  .blocActivites {
+    flex-direction: column;
+    height: auto;
+  }
+  .cubeActivites {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /* M */
+  .imgActivites1,
+  .imgActivites2,
+  .imgActivites3,
+  .imgActivites4,
+  .imgActivites5,
+  .imgActivites6 {
+    height: 200px;
+  }
+  /* M */
+}
+/*--------------------------------------------------*/
+/*------------------Media screen telephone down-----------*/
+/*----------------------------------------------------*/
