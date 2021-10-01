@@ -273,8 +273,8 @@ body {
   width: 60%;
   padding-left: 5%;
 }
-.img_populaires1 {
-  background-image: url("./src/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+.img1p {
+  
   background-size: cover;
   background-position: center;
   width: 35%;
@@ -282,8 +282,8 @@ body {
 
   border-radius: 15px 0 0 15px;
 }
-.img_populaires2 {
-  background-image: url("./src/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+.img2p {
+ 
 
   width: 35%;
   height: 160px;
@@ -516,10 +516,71 @@ body {
   .size_populaires {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .footer {
     display: flex;
     justify-content: space-around;
+  }
+  .img_act1
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
+  }
+  .img_act2
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
+  }
+  .img_act3
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
+  }
+  .img_act4
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
+  }
+  .img_act5
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
+  }
+  .img_act6
+  {
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+
+  border-radius: 15px 15px 0 0;
+
   }
 }
 /*--------------------------------------------------*/
