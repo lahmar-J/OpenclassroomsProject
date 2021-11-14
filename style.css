@@ -3,6 +3,9 @@ html,
 body {
   font-family: Raleway, Impact, "Aerial", sans-serif;
 }
+fas fa-star{
+  blu--
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -19,7 +22,7 @@ body {
 }
 .flex_between {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -395,18 +398,26 @@ body {
 }
 /*---------------------footer------------------*/
 .footer {
-  height: 300px;
+  /* height: 300px;*/
   margin-top: 100px;
+  padding: 42px;
+}
+.footer_gap_alg {
+  display: flex;
+  flex: 1;
+  gap: 20px; /*????*/
 }
 .taille_bloc_foot {
   height: 150px;
+  flex: 1;
 }
 .marge_bloc_foot1 {
+  flex: 1;
   margin-left: 5%;
 }
-.marge_bloc_foot3 {
+/*.marge_bloc_foot3 {
   margin-right: 15%;
-}
+}*/
 .lien_foot {
   color: black;
 }
@@ -610,7 +621,7 @@ body {
 }
 
 .marseille-activities {
-  height: 550px;
+  height: 450px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -637,7 +648,7 @@ body {
   object-fit: cover;
   border-radius: 20px;
   width: 100%;
-  height: 100%;
+  height: 260px;
   margin: 0;
 }
 
@@ -905,6 +916,7 @@ body {
     height: 1500px;
     margin-bottom: 350px;
   }
+
   .flex_around {
     flex-direction: column-reverse;
   }
