@@ -3,9 +3,11 @@ html,
 body {
   font-family: Raleway, Impact, "Aerial", sans-serif;
 }
-fas fa-star{
-  blu--
-}
+
+/*.container {
+  max-width: 1200px;
+  margin:  auto;
+}*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,6 +23,10 @@ fas fa-star{
   align-items: center;
 }
 .flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+.lpp {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +62,217 @@ fas fa-star{
   background-color: #f2f2f2;
 }
 /*----------------------Nav--------------------------------*/
+header {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.navbar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo . accomodation activities sign-up";
+}
+
+#logo {
+  padding: 0;
+}
+
+.navbar .navbar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar .navbar-link .underline-effect {
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+
+.navbar #navbar-link-accomodation > .underline-effect {
+  background: #0065fc;
+}
+
+.navbar #navbar-link-activities:hover > .underline-effect {
+  background: #0065fc;
+}
+
+#navbar-link-sign-up a {
+  color: #0065fc;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.navbar a:visited {
+  color: #0065fc;
+}
+
+.navbar img {
+  grid-area: logo;
+}
+
+.navbar #navbar-link-accomodation {
+  grid-area: accomodation;
+}
+
+#navbar-link-accomodation a {
+  color: #0065fc;
+}
+
+.navbar #navbar-link-activities {
+  grid-area: activities;
+  color: black;
+}
+
+.navbar #navbar-link-activities a {
+  color: black;
+}
+
+.navbar #navbar-link-activities a:hover {
+  color: #0065fc;
+}
+
+.navbar #navbar-link-sign-up {
+  grid-area: sign-up;
+  color: #0065fc;
+  font-weight: 600;
+}
+
+.navbar .active-link {
+  color: #0065fc;
+}
+
+main {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.title-h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  font-size: 1.7em;
+}
+
+.subtitle {
+  margin: 6px 0px;
+}
+
+.research-box {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: auto;
+  background-color: #f2f2f2;
+  border-radius: 14px 0 0 14px;
+}
+.fa-map-marker-alt {
+  font-size: 17px;
+}
+
+.research-bar {
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.research-bar::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-research {
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.button-research:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+#icon-glass {
+  display: none;
+}
+
+.filters h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.filters ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.filters ul li {
+  display: inline;
+  margin-left: 25px;
+  font-weight: 700;
+  border: solid 2px #e2e2e2;
+  padding: 0 20px 0 0;
+  margin-top: 10px;
+  border-radius: 200px;
+}
+
+.filters ul li:hover {
+  cursor: pointer;
+  background: #deebff;
+  transition-duration: 0.25s;
+}
+
+.filters ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
+}
+
+.icon-filter {
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 18px;
+  border-radius: 200px;
+  margin-right: 15px;
+}
+
+.info .fas {
+  color: #0065fc;
+  font-size: 16px;
+  padding: 7px 11px 7px 11px;
+  border: solid 1px #d9d9d9;
+  border-radius: 2000px;
+  margin-right: 20px;
+}
+
+/*----test----*/ /*
 .size_nav {
   height: 100px;
 }
@@ -92,7 +309,7 @@ fas fa-star{
   height: 50px;
   width: 230px;
   font-size: 18px;
-  color: black;
+  color: rgba(68, 67, 67, 0.884);
   font-weight: bold;
 }
 .icon_size {
@@ -175,7 +392,7 @@ fas fa-star{
 .img_hebergements1 {
   background-image: url("./src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   width: 100%;
-  height: 120px;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -183,15 +400,15 @@ fas fa-star{
 .img_hebergements2 {
   background-image: url("./src/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   width: 100%;
-  height: 120px;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
 }
 .img_hebergements3 {
   background-image: url("./src/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-  height: 120px;
   width: 100%;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -199,15 +416,15 @@ fas fa-star{
 .img_hebergements4 {
   background-image: url("./src/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   width: 100%;
-  height: 120px;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
 }
 .img_hebergements5 {
   background-image: url("./src/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-  height: 120px;
   width: 100%;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -215,7 +432,7 @@ fas fa-star{
 .img_hebergements6 {
   background-image: url("./src/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   width: 100%;
-  height: 120px;
+  height: 133px;
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -228,7 +445,7 @@ fas fa-star{
 .flex_column_centre {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 }
 .flex_column_around {
@@ -284,25 +501,25 @@ fas fa-star{
 }
 
 .img1p {
+  object-fit: cover;
+  width: 125px;
+  height: 130px;
   background-size: cover;
   background-position: center;
-  width: 220px;
-  height: 145px;
-  width: auto;
-
   border-radius: 20px 0 0 20px;
 }
 .img2p {
-  width: 220;
-  height: 160px;
-  border-radius: 20px 0 0 20px;
-}
-.img_populaires3 {
-  background-image: url("./src/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  object-fit: cover;
+  width: 125px;
+  height: 130px;
   background-size: cover;
   background-position: center;
-  width: 220px;
-  height: 160px;
+  border-radius: 20px 0 0 20px;
+}
+.img3p {
+  object-fit: cover;
+  width: 125px;
+  height: 130px;
   background-size: cover;
   background-position: center;
   border-radius: 20px 0 0 20px;
@@ -648,7 +865,7 @@ fas fa-star{
   object-fit: cover;
   border-radius: 20px;
   width: 100%;
-  height: 260px;
+  height: 100%;
   margin: 0;
 }
 
@@ -663,6 +880,10 @@ fas fa-star{
 }
 
 .englobe {
+  height: 100%;
+  margin: 0;
+}
+.englobe2 {
   height: 100%;
   margin: 0;
 }
@@ -690,6 +911,44 @@ fas fa-star{
   cursor: pointer;
   /**/
   transform: scale(1.05);
+}
+.footer {
+  width: 100%;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-blocs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.footer-bloc {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bloc > * {
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-link:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.footer-bloc-assistance {
+  margin-right: 20%;
 }
 
 /*--------------------------------------------------*/
@@ -724,6 +983,7 @@ fas fa-star{
   .cube_hebergements {
     width: 100%;
     margin-bottom: 50px;
+    margin-left: 15px;
   }
   .cube_details_populaires {
     min-height: auto;
@@ -762,8 +1022,6 @@ fas fa-star{
   }
   .cube_populaires {
     display: flex;
-    flex-wrap: wrap;
-    /*flex-direction: column;*/
   }
   .size_populaires.back_gris.bloc_populaires {
     width: 100%;
@@ -895,6 +1153,52 @@ fas fa-star{
 /*----------------------------------------------------*/
 
 @media screen and (max-width: 770px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "logo navbar-link-sign-up"
+      "navbar-link-accomodation navbar-link-activities";
+  }
+  .navbar img {
+    grid-area: logo;
+  }
+  .navbar #navbar-link-accomodation {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-accomodation;
+  }
+  .navbar #navbar-link-activities {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-activities;
+  }
+  .navbar #navbar-link-activities .underline-effect {
+    background-color: #dbdbdb;
+  }
+  .navbar #navbar-link-sign-up {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: navbar-link-sign-up;
+  }
+
+  .research-box {
+    position: relative;
+  }
+
+  .research-bar {
+    width: 300px;
+    height: 49px;
+  }
+  #button-research {
+    display: none;
+  }
+  #icon-glass {
+    display: block;
+    position: absolute;
+    right: -20px;
+    border-radius: 15px;
+  }
+
   .blocs {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -923,4 +1227,51 @@ fas fa-star{
   .flex_column_around.size_hebergements.back_gris.bloc_hebergements {
     width: 100%;
   }
+
+  /*----footer---*/
+  .footer-blocs {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .footer-blocs .footer-bloc {
+    padding: 10px 20px;
+  }
+  .footer {
+    width: 100%;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-blocs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .footer-bloc {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bloc > * {
+    margin-bottom: 10px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .footer-link:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+
+  .footer-bloc-assistance {
+    margin-right: 20%;
+  } /*----footer---*/
 }
