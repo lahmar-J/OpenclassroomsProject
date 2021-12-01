@@ -2,8 +2,14 @@
 html,
 body {
   font-family: Raleway, Impact, "Aerial", sans-serif;
+  margin: auto;
 }
-
+p {
+  margin: 0px;
+}
+.fa-star {
+  color: #0065fc;
+}
 /*.container {
   max-width: 1200px;
   margin:  auto;
@@ -63,9 +69,10 @@ body {
 }
 /*----------------------Nav--------------------------------*/
 header {
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
+  /* padding: 10px;*/
 }
 
 .navbar {
@@ -78,7 +85,7 @@ header {
 }
 
 #logo {
-  padding: 0;
+  padding: 25px;
 }
 
 .navbar .navbar-link {
@@ -145,6 +152,7 @@ header {
   grid-area: sign-up;
   color: #0065fc;
   font-weight: 600;
+  align-items: flex-end;
 }
 
 .navbar .active-link {
@@ -477,7 +485,7 @@ main {
   width: 90%;
 }
 .fas fa-star {
-  color: blue;
+  background-color: #0065fc;
 }
 /*--------------------Populaire-----------*/
 .bloc_populaires {
@@ -1186,7 +1194,7 @@ main {
   }
 
   .research-bar {
-    width: 300px;
+    width: 270px;
     height: 49px;
   }
   #button-research {
@@ -1197,6 +1205,9 @@ main {
     position: absolute;
     right: -20px;
     border-radius: 15px;
+  }
+  .flex_centre {
+    justify-content: left;
   }
 
   .blocs {
