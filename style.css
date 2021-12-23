@@ -107,6 +107,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px;
 }
 header nav a {
   text-decoration: unset;
@@ -120,10 +121,6 @@ header nav a {
 }
 .hb-act:hover {
   color: #0065fc;
-}
-
-#logo img {
-  margin: 25px 24px;
 }
 
 main {
@@ -877,7 +874,7 @@ main {
 
 @media screen and (min-width: 771px) {
   .hb-act:hover {
-    border-top: 4px solid #206c9e;
+    border-top: 4px solid #0065fc;
   }
 }
 
@@ -904,6 +901,7 @@ main {
   header {
     flex-direction: column;
     align-items: unset;
+    padding: 0px;
   }
   header nav {
     display: flex;
@@ -911,11 +909,14 @@ main {
   .hb-act {
     flex: 1;
     text-align: center;
-    padding: 0 0 12px 0;
+    padding: 33px 0 12px 0;
     border-bottom: 3px solid #ffebeb;
   }
   .hb-act:hover {
-    border-bottom: 3px solid #206c9e;
+    border-bottom: 3px solid #0065fc;
+  }
+  .icon-location {
+    width: 52px;
   }
   .bloc1 {
     flex-direction: column;
@@ -931,27 +932,27 @@ main {
   }
   .img_hebergements1 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .img_hebergements2 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .img_hebergements3 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .img_hebergements4 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .img_hebergements5 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .img_hebergements6 {
     width: 100%;
-    height: 210px;
+    height: 140px;
   }
   .bloc_activites {
     flex-direction: column;
@@ -981,7 +982,9 @@ main {
   .main2 {
     margin: 0px 25px;
   }
-
+  img.logo {
+    margin: 23px 0px 0px 22px;
+  }
   #ins {
     position: absolute;
     top: 37px;
@@ -1003,7 +1006,7 @@ main {
   #icon-glass {
     display: block;
     position: absolute;
-    right: 2px;
+    right: -90px;
     border-radius: 15px;
   }
   .filters ul {
@@ -1034,11 +1037,11 @@ main {
     width: 100%;
   }
   .cube_details_hebergements {
-    padding: 7px 7px 7px 13px;
+    padding: 7px 49px 12px 26px;
   }
   .title-h1 {
     margin: 36px 0px 9px 0px;
-    font-size: 23px;
+    font-size: 26px;
   }
   p {
     font-size: 15px;
@@ -1051,7 +1054,7 @@ main {
     padding-left: 19px;
   }
   .h3h {
-    font-size: 15px;
+    font-size: 17px;
   }
   .affp {
     margin: 37px 37px 36px 0px;
@@ -1062,24 +1065,7 @@ main {
   .back_gris2 {
     background-color: rgb(253 252 252);
   }
-  .img_hebergements1 {
-    height: 115px;
-  }
-  .img_hebergements2 {
-    height: 115px;
-  }
-  .img_hebergements3 {
-    height: 115px;
-  }
-  .img_hebergements4 {
-    height: 115px;
-  }
-  .img_hebergements5 {
-    height: 115px;
-  }
-  .img_hebergements6 {
-    height: 115px;
-  }
+
   .marseille-activities .card__title {
     box-sizing: border-box;
   }
@@ -1108,6 +1094,9 @@ main {
   }
   .flex_column_around.size_hebergements.back_gris.bloc_hebergements {
     width: 90%;
+  }
+  .flex_column_around {
+    width: auto;
   }
 
   /*----footer---*/
